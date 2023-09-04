@@ -1,2 +1,2 @@
 #!/bin/bash
-grep bin /etc/passwd | find /etc/passwd -type f -print | wc -l
+grep -c bin /etc/passwd
