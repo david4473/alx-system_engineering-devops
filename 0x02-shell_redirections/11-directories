@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -d ./*/ | grep -E -v "/\.{1,2}/" | wc -l
+find . -type d | grep -E -v '^\.$|^\.\.$|/\.' | wc -l
